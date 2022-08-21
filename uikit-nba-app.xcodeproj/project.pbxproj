@@ -13,6 +13,11 @@
 		84F4FE5D28B0D13400942C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F4FE5B28B0D13400942C8C /* Main.storyboard */; };
 		84F4FE5F28B0D14800942C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F4FE5E28B0D14800942C8C /* Assets.xcassets */; };
 		84F4FE6228B0D14800942C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F4FE6028B0D14800942C8C /* LaunchScreen.storyboard */; };
+		84F4FE6A28B0D23800942C8C /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4FE6928B0D23800942C8C /* Team.swift */; };
+		84F4FE6C28B0D8A300942C8C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4FE6B28B0D8A300942C8C /* Player.swift */; };
+		84F4FE6F28B1C0BB00942C8C /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4FE6D28B1C0BB00942C8C /* TeamTableViewCell.swift */; };
+		84F4FE7028B1C0BB00942C8C /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F4FE6E28B1C0BB00942C8C /* TeamTableViewCell.xib */; };
+		84F4FE7228B1C71C00942C8C /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4FE7128B1C71C00942C8C /* MockModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		84F4FE5E28B0D14800942C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F4FE6128B0D14800942C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F4FE6328B0D14800942C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F4FE6928B0D23800942C8C /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		84F4FE6B28B0D8A300942C8C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		84F4FE6D28B1C0BB00942C8C /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		84F4FE6E28B1C0BB00942C8C /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
+		84F4FE7128B1C71C00942C8C /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				84F4FE5E28B0D14800942C8C /* Assets.xcassets */,
 				84F4FE6028B0D14800942C8C /* LaunchScreen.storyboard */,
 				84F4FE6328B0D14800942C8C /* Info.plist */,
+				84F4FE6928B0D23800942C8C /* Team.swift */,
+				84F4FE6B28B0D8A300942C8C /* Player.swift */,
+				84F4FE6D28B1C0BB00942C8C /* TeamTableViewCell.swift */,
+				84F4FE6E28B1C0BB00942C8C /* TeamTableViewCell.xib */,
+				84F4FE7128B1C71C00942C8C /* MockModel.swift */,
 			);
 			path = "uikit-nba-app";
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F4FE7028B1C0BB00942C8C /* TeamTableViewCell.xib in Resources */,
 				84F4FE6228B0D14800942C8C /* LaunchScreen.storyboard in Resources */,
 				84F4FE5F28B0D14800942C8C /* Assets.xcassets in Resources */,
 				84F4FE5D28B0D13400942C8C /* Main.storyboard in Resources */,
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F4FE6A28B0D23800942C8C /* Team.swift in Sources */,
 				84F4FE5A28B0D13400942C8C /* ViewController.swift in Sources */,
 				84F4FE5628B0D13400942C8C /* AppDelegate.swift in Sources */,
+				84F4FE7228B1C71C00942C8C /* MockModel.swift in Sources */,
+				84F4FE6C28B0D8A300942C8C /* Player.swift in Sources */,
+				84F4FE6F28B1C0BB00942C8C /* TeamTableViewCell.swift in Sources */,
 				84F4FE5828B0D13400942C8C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
