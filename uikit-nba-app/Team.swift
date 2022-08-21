@@ -12,6 +12,7 @@ struct Team: Decodable {
     let nbaDotComTeamId: Int
     let key: String
     let city: String
+    let name: String
     let conference: String
     let division: String
     let primaryColor: String
@@ -23,6 +24,7 @@ struct Team: Decodable {
         case nbaDotComTeamId = "NbaDotComTeamID"
         case key = "Key"
         case city = "City"
+        case name = "Name"
         case conference = "Conference"
         case division = "Division"
         case primaryColor = "PrimaryColor"
