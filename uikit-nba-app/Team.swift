@@ -13,11 +13,11 @@ struct Team: Decodable {
     let key: String
     let city: String
     let name: String
-    let conference: String
-    let division: String
-    let primaryColor: String
-    let secondaryColor: String
-    let wikipediaLogoUrl: String
+    let conference: String?
+    let division: String?
+    let primaryColor: String?
+    let secondaryColor: String?
+    let wikipediaLogoUrl: String?
     
     enum CodingKeys: String, CodingKey {
         case teamId = "TeamID"
