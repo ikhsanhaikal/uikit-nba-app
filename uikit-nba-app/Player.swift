@@ -9,34 +9,37 @@ import Foundation
 
 struct Player: Decodable {
     let playerId: Int
-    let active: String
+    let status: String
     let position: String
     let firstName: String
     let lastName: String
     let photoUrl: String
-    let nbaDotComPlayerId: String
-    let jersey: Int
-    let height: Int
-    let weight: Int
-    let birthCity: String
-    let birthState: String
-    let birthCountry: String
+    let nbaDotComPlayerId: Int?
+    let jersey: Int?
+    let height: Int?
+    let weight: Int?
+    let birthCity: String?
+    let birthState: String?
+    let birthCountry: String?
     
     
-    var nbaPhotoHeadshot: String {
+    var nbaPhotoHeadshot: String? {
         get {
-            "https://cdn.nba.com/headshots/nba/latest/1040x760/\(nbaDotComPlayerId).png"
+            guard let nbaDotComPlayerId = nbaDotComPlayerId else {
+                return nil
+            }
+            return "https://cdn.nba.com/headshots/nba/latest/1040x760/\(nbaDotComPlayerId).png"
         }
     }
     
     enum CodingKeys: String, CodingKey {
         case playerId = "PlayerID"
-        case active   = "Active"
+        case status   = "Status"
         case position = "Position"
         case firstName = "FirstName"
         case lastName = "LastName"
         case photoUrl = "PhotoUrl"
-        case nbaDotComPlayerId = "NbaDotComTeamID"
+        case nbaDotComPlayerId = "NbaDotComPlayerID"
         case jersey = "Jersey"
         case height = "Height"
         case weight = "Weight"
