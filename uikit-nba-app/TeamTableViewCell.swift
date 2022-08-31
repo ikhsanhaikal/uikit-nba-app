@@ -14,26 +14,14 @@ class TeamTableViewCell: UITableViewCell {
     
     @IBOutlet weak var conferenceTag: UILabel! {
         didSet {
-            conferenceTag.sizeToFit()
-            conferenceTag.numberOfLines = 0
             conferenceTag.textAlignment = .center
-            conferenceTag.backgroundColor = .black
-            conferenceTag.textColor = .white
             conferenceTag.clipsToBounds = true
-            conferenceTag.layer.cornerRadius = conferenceTag.frame.width * 0.2
+            conferenceTag.layer.cornerRadius = conferenceTag.frame.width * 0.1
+            conferenceTag.layer.borderColor = UIColor.lightGray.cgColor
+            conferenceTag.layer.borderWidth = 0.5
         }
     }
-    @IBOutlet weak var divisionTag: UILabel!  {
-        didSet {
-            divisionTag.sizeToFit()
-            divisionTag.textAlignment = .center
-            divisionTag.numberOfLines = 0
-            divisionTag.backgroundColor = .red
-            divisionTag.textColor = .white
-            divisionTag.clipsToBounds = true
-            divisionTag.layer.cornerRadius = divisionTag.frame.width * 0.2
-        }
-    }
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
