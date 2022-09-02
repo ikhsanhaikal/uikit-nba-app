@@ -1,11 +1,17 @@
 #  BASIC NBA APP 
 
-### screen 1 (teams tableview)
-![](gifs/SimulatorScreen1.gif)
-### screen 2 (roster tableview)
-![](gifs/SimulatorScreen2.gif)
-### screen 3 (player detail)
-![](gifs/SimulatorScreen3.gif)
+<table>
+  <tr>
+    <td>teams tableview</td>
+    <td>teams detail (roster tableview)</td>
+    <td>player detail</td>
+  </tr>
+  <tr>
+    <td><img src="gifs/SimulatorScreen1.gif"  height=480></td>
+    <td><img src="gifs/SimulatorScreen2.gif"  height=480></td>
+    <td><img src="gifs/SimulatorScreen3.gif"  height=480></td>
+  </tr>
+</table>
 
 
 
